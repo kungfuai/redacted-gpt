@@ -51,7 +51,7 @@ if prompt := st.chat_input("What is up?"):
     generated_text = openai_response.choices[0]["message"]["content"]
     if show_redaction:
         with st.chat_message("redacted"):
-            st.markdown(generated_text)
+            st.text(generated_text)
     # response = f"Echo: {prompt}"
     # Display assistant response in chat message container
     
@@ -60,5 +60,5 @@ if prompt := st.chat_input("What is up?"):
     unmasked = masker.unmask_data(generated_text)
     # print("unmasked:", unmasked)
     with st.chat_message("assistant"):
-        st.markdown(unmasked)
+        st.text(unmasked)
     st.session_state["messages"].append({"role": "assistant", "content": unmasked})
