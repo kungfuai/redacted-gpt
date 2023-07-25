@@ -1,0 +1,43 @@
+# IDE
+.vscode
+
+# Python bytecode files
+*.pyc
+*.pyd
+*.pyo
+*$py.class
+
+# Model files
+**/*.h5
+/*.pkl
+/*.npz
+
+# Auto-generated Files
+.pytest_cache/
+venv/
+**/.ipynb_checkpoints/*
+**/.DS_Store/*
+.vscode
+.idea/*
+**/__pycache__/*
+
+# Temporary Directories
+logs/*
+**/tmp/*
+**/lightning_logs/**
+mlruns/*
+*.tar.gz
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+**/.terraform.lock.hcl
+terraform.tfstate
+
+# Environment
+.env
+
+# Repo Files
+/data
